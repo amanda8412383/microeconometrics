@@ -1,74 +1,64 @@
-# Course project template
+--- 
+Project for the course in Microeconometrics | Summer 2020, M.Sc. Economics, Bonn University | [Ying-Xuan Wu](https://github.com/amanda8412383)
 
-This is a template for course projects. We use [GitHub Classroom](https://classroom.github.com) to administrate our student projects and so you need to sign up for a [GitHub Account](http://github.com).
+# Replication of Duflo E, Dupas P, Ginn T, Barasa GM, Baraza M, Pouliquen V, et al. (2019) <a class="tocSkip">   
+---
 
-## Project overview
+This notebook contains my replication of the results from the following paper:
 
-Please ensure that a brief description of your project is included in the [README.md](https://github.com/HumanCapitalAnalysis/template-course-project/blob/master/README.md), which provides a proper citation of your baseline article. Also, please set up the following badges that allow to easily access your project notebook.
+> Duflo E, Dupas P, Ginn T, Barasa GM, Baraza M, Pouliquen V, et al. (2019) HIV prevention among youth: A randomized controlled trial of voluntary counseling and testing for HIV and male condom distribution in rural Kenya
 
-<a href="https://nbviewer.jupyter.org/github/HumanCapitalAnalysis/template-course-project/blob/master/example_project.ipynb"
-   target="_parent">
-   <img align="center"
-  src="https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.png"
-      width="109" height="20">
-</a>
-<a href="https://mybinder.org/v2/gh/HumanCapitalAnalysis/template-course-project/master?filepath=example_project.ipynb"
-    target="_parent">
-    <img align="center"
-       src="https://mybinder.org/badge_logo.svg"
-       width="109" height="20">
-</a>
+##### Downloading and viewing this notebook:
 
-## Reproducibility
+* The best way to view this notebook is by downloading it and the repository it is located in from [GitHub](https://github.com/HumanCapitalAnalysis/microeconometrics-course-project-amanda8412383). 
 
-To ensure full reproducibility of your project, please try to set up a [Travis CI](https://travis-ci.org) as your continuous integration service. An introductory tutorial for [conda](https://conda.io) and [Travis CI](https://docs.travis-ci.com/) is provided [here](https://github.com/HumanCapitalAnalysis/template-course-project/blob/master/tutorial_conda_travis.ipynb). While not at all mandatory, setting up a proper continuous integration workflow is an extra credit that can improve the final grade.
+* Other viewing options like _MyBinder_ or _NBViewer_ 
 
-[![Build Status](https://travis-ci.org/HumanCapitalAnalysis/template-course-project.svg?branch=master)](https://travis-ci.org/HumanCapitalAnalysis/template-course-project)
+* [travis-web]()
 
-In some cases you might not be able to run parts of your code on  [Travis CI](https://travis-ci.org) as, for example, the computation of results takes multiple hours. In those cases you can add the result in a file to your repository and load it in the notebook. See below for an example code.
 
-```python
-# If we are running on TRAVIS-CI we will simply load a file with existing results.
-if os.environ['TRAVIS']:
-  rslt = pkl.load(open('stored_results.pkl', 'br'))
-else:
-  rslt = compute_results()
+* The original paper, as well as the data provided by the authors can be accessed [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/CVOPZL).
 
-# Now we are ready for further processing.
-...
-```
+##### Information about replication and individual contributions:
 
-However, if you decide to do so, please be sure to provide an explanation in your notebook explaining why exactly this is required in your case.
+* Due to the unavailability of original code and the massiveness of the dataset, the estimations all differ from the original paper in various degrees.
 
-## Structure of notebook
+* One of the most important outcome variable isn't found, the attempts on searching it is documented in section 7
 
-A typical project notebook has the following structure:
+* For the replication, I try to remain true to the original structure of the paper, all the panels and rows are lined as they appear in Duflo et al. (2019) and named identically.
 
-* presentation of baseline article with proper citation and brief summary
+* some of the columns feature in my replication appear as second-row indexes compared to the original tables, and the incidence rate has become independent to suit my workflow in Python.
 
-* using causal graphs to illustrate the authors' identification strategy
+##### about the paper
 
-* replication of selected key results
+Duflo et al. (2019) examine the effects of Voluntary Counseling and Testing for HIV (VCT) and increasing access to male condoms compared to standard available HIV prevention services, using biological and behavioral outcomes, among youth in Western Kenya. VCT, serving as the entry to HIV treatment and care, is a test of accessing one’s HIV serostatus, in addition to receiving individualized risk-reduction counseling. VCT is supposed to help individuals reduce risky sexual behaviors and prevent themselves and their partners from HIV and other sexually transmitted infections such as Herpes Simplex Type 2 (HSV-2). Even though some of the previous studies show the reduction of risky sexual behavior in testing-positive individuals, other studies bring about the concern of disinhibition among those testing negative (Sherr et al. 2007). 
 
-* critical assessment of quality
 
-* independent contribution, e.g. additional external evidence, robustness checks, visualization
 
-There might be good reason to deviate from this structure. If so, please simply document your reasoning and go ahead. Please use the opportunity to review other student projects for some inspirations as well.
+##### notebook structure 
 
-## Project Example
+In this notebook, I attempt to replicate the results presented in the paper by Duflo et al. (2019) but only acquire similar result and failed to find one of the most important outcome variable.In section 2, the methodology adopted by Duflo et al. (2019) is presented, regarding how sampling, treatment, randomizing and tracking are conducted. In Section 3, possible identification is brought out from 3 different aspects, containing selection bias, measure error from self report, and externality. Section 4 briefly discusses the methodology used by the authors. Section 5 shows my replication of the results in the paper and discussion thereof.  Section 6 offers  discussion on insignificant results. Section 7 reveals my failing attemps on finding HSV-2 testing result at baseline.
 
-The notebook [example_project.ipynb](https://github.com/HumanCapitalAnalysis/template-course-project/blob/master/example_project.ipynb) contains an example project by [Annica Gehlen](https://github.com/amageh) from the 2019 iteration of the [Mircoeconometrics](https://github.com/HumanCapitalAnalysis/microeconometrics) class at Bonn University. It replicates the results from the following paper:
+##### reference
 
-* Lindo, J. M., Sanders, N. J., & Oreopoulos, P. (2010). [Ability, Gender, and Performance Standards: Evidence from Academic Probation](https://www.aeaweb.org/articles?id=10.1257/app.2.2.95). *American Economic Journal: Applied Economics*, 2(2), 95-117.
+* **Canning D. (2006)** _The economics of HIV/AIDS in low-income countries: the case for prevention. J Econ Perspect._ 20(3):121-142. doi:10.1257/jep.20.3.121
 
-Lindo et al. (2010) examine the effects of academic probation on student outcomes using a regression discontinuity design. The analysis is based on data from a large Canadian university and evaluates whether academic probation is successful in improving the performance of low scoring students. Consistent with a model of performance standards, the authors find that being placed on probation in the first year of university induces some students to drop out of school while it improves the grades of students who continue their studies. In a more general sense, academic probation can offer insights into how agents respond to negative incentives and the threat of punishment in a real-world context.
+* **Coates TJ, Kulich M, Celentano DD, Zelaya CE, Chariyalertsak S, Chingono A, et al. (2014)** _Effect of community-based voluntary counselling and testing on HIV incidence and social and behavioural outcomes (NIMH Project Accept; HPTN 043): a cluster-randomised trial._ Lancet Global Health. 2(5): E267–77. https://doi.org/10.1016/S2214-109X(14)70032-4 PMID: 25103167
 
-## Frequently asked questions and answers
+* **de Grange, L., González, F., Vargas, I. et al. (2015)** _A Logit Model With Endogenous Explanatory Variables and Network Externalities._ Netw Spat Econ 15, 89–116. https://doi.org/10.1007/s11067-014-9271-5
 
-* *Where can I look for publications that provide the data behind their research?* Some journals provide the data for their published articles as data supplements directly on their website. In addition, the [Replication Wiki](http://replication.uni-goettingen.de/wiki/index.php/Main_Page)  and the [Harvard Dataverse](https://dataverse.harvard.edu) compile a lot such information.
+* **Duflo E, Dupas P, Ginn T, Barasa GM, Baraza M, Pouliquen V, et al. (2019)** _HIV prevention among youth: A randomized controlled trial of voluntary counseling and testing for HIV and male condom distribution in rural Kenya._ PLoS ONE 14(7): e0219535. https://doi.org/10.1371/journal.pone.0219535
 
-* *What are other useful resources for research data?* There is a tremendous amount of data available online. For example, MDRC provides a host of data files for public use [here](https://www.mdrc.org/available-public-use-files) from the evaluation of public policy initiatives. More generally, [Google Dataset Search](https://datasetsearch.research.google.com) allows to look for all kinds of online data. 
+* **Duflo E, Dupas P, Kremer M. (2015)** _Education, HIV, and Early Fertility: Experimental Evidence from Kenya. American Economic Review._ 105(9):2257–97.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/HumanCapitalAnalysis/template-course-project/blob/master/LICENSE)
-[![Continuous Integration](https://github.com/HumanCapitalAnalysis/template-course-project/workflows/Continuous%20Integration/badge.svg)](https://github.com/HumanCapitalAnalysis/template-course-project/actions)
+* **Fonner VA, Denison J, Kennedy CE, O’Reilly K, Sweat M. (2012)** _Voluntary counseling and testing (VCT) for changing HIV-related risk behavior in developing countries._ The Cochrane Library. https://doi.org/10.1002/14651858.CD010274
+
+* **Greene (2006)** _Econometric Analysis_
+
+* **Hansen B. (2020)** _Econometrics_
+
+* **Miguel, Edward, and Michael Kremer. (2004)** _Worms: Identifying Impacts on Education and Health in the Presence of Treatment Externalities._ Econometrica 72 (1): 159-217.
+
+* **Sherr L, Lopman B, Kakowa M, Dube S, Chawira G, Nyamukapa C, et al. (2007)** _Voluntary counselling and testing: uptake, impact on sexual behaviour, and HIV incidence in a rural Zimbabwean cohort. AIDS._ 21(7):851–86 https://doi.org/10.1097/QAD.0b013e32805e8711 PMID: 17415040
+
+

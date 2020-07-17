@@ -4,9 +4,6 @@ dependencies:
 - numpy
 - pandas
 - jupyterlab
-- matplotlib
-- seaborn
-- scipy
 - statsmodels
 - pip
 - pip:
