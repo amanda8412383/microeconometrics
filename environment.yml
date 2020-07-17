@@ -2,7 +2,7 @@ name: student_project
 
 dependencies:
 - numpy
-- pandas
+- pandas=0.20.3
 - jupyterlab
 - statsmodels
 - pip
