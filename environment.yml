@@ -6,7 +6,7 @@ dependencies:
 - jupyterlab
 - statsmodels
 - pip
-- IPython.display
+- iPython
 - pip:
 
 
