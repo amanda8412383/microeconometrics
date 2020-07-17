@@ -25,7 +25,9 @@ def grouping(row):
 
 df['group'] = df.apply (lambda row: grouping(row), axis=1)
 #filter out irrelavant or problematic entries
-df_filter =  df.query('surveyed == 1 & ~group.isnull() & LOG_comments == "" & TRACKED == 1')
+df_filter =  df
+# .query(' ~group.isnull() ')
+# df.query('surveyed == 1 & ~group.isnull() & LOG_comments == "" & TRACKED == 1')
 
 ### generating / formatting variables columns needed in table 1
 def cutting(incol, binwidth, labelname, pre_varname):
