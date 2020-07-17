@@ -9,7 +9,7 @@ warnings.simplefilter("ignore")
 with warnings.catch_warnings():
     warnings.simplefilter("ignore")
     import statsmodels.api as sm
-df = pd.read_stata('bio_workingtable_clean.dta')
+df = pd.read_stata('prune.dta')
 
 
 def grouping(row):
