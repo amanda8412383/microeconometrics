@@ -2,11 +2,13 @@ name: student_project
 
 dependencies:
 - numpy
-- pandas=1.0.1
+- pandas
 - jupyterlab
 - statsmodels
 - pip
 - iPython
+- subprocess
+- glob
 - pip:
 
 
