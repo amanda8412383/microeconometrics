@@ -18,4 +18,4 @@ script:
    # selected notebooks or notebooks in subdirectories,
    # please go ahead and edit the file to meet your 
    # needs.
-   - travis_wait python utils/travis_runner.py
+   - travis_wait 60 python utils/travis_runner.py
