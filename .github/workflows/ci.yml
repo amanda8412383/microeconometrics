@@ -18,7 +18,7 @@ jobs:
     - name: execute notebooks
       shell: bash -l {0}
       run: |
-        . scl_source enable llvm-toolset-6.0 || true
         export PATH="$PATH:/usr/share/miniconda/bin"
         source .envrc
-        jupyter nbconvert --execute --ExecutePreprocessor.timeout=-1 *.ipynb
+        jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute *.ipynb
+

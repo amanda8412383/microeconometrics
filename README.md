@@ -13,17 +13,17 @@ This notebook contains my replication of the results from the following paper:
 * The best way to view this notebook is by downloading it and the repository it is located in from [GitHub](https://github.com/HumanCapitalAnalysis/microeconometrics-course-project-amanda8412383). 
 
 * Other viewing options like _MyBinder_ or _NBViewer_ 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/amanda8412383/microeconometrics-course-project-amanda8412383/HEAD)
 
-* [travis-web]()
-
+* To ensure reproductivity, the repo has been linked to Travis. 
+[![Build Status](https://travis-ci.com/amanda8412383/microeconometrics-course-project-amanda8412383.svg?branch=master)](https://travis-ci.com/amanda8412383/microeconometrics-course-project-amanda8412383)
 
 * The original paper, as well as the data provided by the authors can be accessed [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/CVOPZL).
 
 ##### Information about replication and individual contributions:
 
-* Due to the unavailability of original code and the massiveness of the dataset, the estimations all differ from the original paper in various degrees.
+* Due to the unavailability of original code and the massiveness of the dataset, the estimations slightly differ from the original paper in various degrees.
 
-* One of the most important outcome variable isn't found, the attempts on searching it is documented in section 7
 
 * For the replication, I try to remain true to the original structure of the paper, all the panels and rows are lined as they appear in Duflo et al. (2019) and named identically.
 
