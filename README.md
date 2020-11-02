@@ -12,7 +12,7 @@ This notebook contains my replication of the results from the following paper:
 
 * The best way to view this notebook is by downloading it and the repository it is located in from [GitHub](https://github.com/HumanCapitalAnalysis/microeconometrics-course-project-amanda8412383). 
 
-* Other viewing options like _MyBinder_ or _NBViewer_ 
+* Other viewing options like _MyBinder_ 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/amanda8412383/microeconometrics-course-project-amanda8412383/HEAD)
 
 * To ensure reproductivity, the repo has been linked to Travis. 
