@@ -10,13 +10,13 @@ This notebook contains my replication of the results from the following paper:
 
 ##### Downloading and viewing this notebook:
 
-* The best way to view this notebook is by downloading it and the repository it is located in from [GitHub](https://github.com/HumanCapitalAnalysis/microeconometrics-course-project-amanda8412383). 
+* The best way to view this notebook is by downloading it and the repository it is located in from [GitHub](https://github.com/amanda8412383/microeconometrics). 
 
 * Other viewing options like _MyBinder_ 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/amanda8412383/microeconometrics-course-project-amanda8412383/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/amanda8412383/microeconometrics/HEAD)
 
-* To ensure reproductivity, the repo has been linked to Travis. 
-[![Build Status](https://travis-ci.com/amanda8412383/microeconometrics-course-project-amanda8412383.svg?branch=master)](https://travis-ci.com/amanda8412383/microeconometrics-course-project-amanda8412383)
+<!-- * To ensure reproductivity, the repo has been linked to Travis. 
+[![Build Status](https://travis-ci.com/amanda8412383/microeconometrics.svg?branch=master)](https://travis-ci.com/amanda8412383/microeconometrics) -->
 
 * The original paper, as well as the data provided by the authors can be accessed [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/CVOPZL).
 
